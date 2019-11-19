@@ -1,0 +1,14 @@
+server:
+  port: 9090
+
+# enable all public endpoints  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        
+# enable overridden health endpoint
+  endpoint:
+    health:
+      show-details: always      
