@@ -22,7 +22,7 @@ public class OverrideHealth implements HealthIndicator {
 	private boolean checkInternet() {
 		boolean flag = false;
 		try {
-			URL url = new URL("https://www.google.in");
+			URL url = new URL("https://www.google.com");
 			URLConnection connection = url.openConnection();
 			connection.connect();
 			flag = true;
